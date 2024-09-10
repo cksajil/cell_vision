@@ -26,7 +26,7 @@ if not os.path.exists(images_folder):
 # Plot the correlation matrix
 plt.figure(figsize=(12, 10))
 sns.heatmap(
-    corr_matrix, annot=True, cmap="crest", vmin=-1, vmax=1, fmt=".2f", square=True
+    corr_matrix, annot=False, cmap="crest", vmin=-1, vmax=1, fmt=".2f", square=True
 )
 plt.title("Correlation Matrix")
 plt.xticks(rotation=45, ha="right")

@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-NUM_SAMPLES = 10
+NUM_SAMPLES = 100
 NUM_LEVELS = 12
 NUM_MEASUREMENTS = 11
 
@@ -97,7 +97,8 @@ def calculate_measurements(intensity_light_sources):
 
 
 # Light source intensities to test
-intensities = np.linspace(0.1, 2.0, NUM_SAMPLES)
+# intensities = np.linspace(0.1, 2.0, NUM_SAMPLES)
+intensities = np.random.uniform(0.1, 2.0, NUM_SAMPLES)
 
 
 # Create dataset
